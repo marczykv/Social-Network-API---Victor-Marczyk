@@ -9,7 +9,7 @@ const thoughtSchema = new mongoose.Schema({
   createdAt: {
     type: Date,
     default: Date.now,
-    get: (timestamp) => formatDate(timestamp), // Custom timestamp formatting function
+    get: (timestamp) => formatDate(timestamp), 
   },
   username: {
     type: String,
@@ -33,7 +33,7 @@ const thoughtSchema = new mongoose.Schema({
       createdAt: {
         type: Date,
         default: Date.now,
-        get: (timestamp) => formatDate(timestamp), // Custom timestamp formatting function
+        get: (timestamp) => formatDate(timestamp), 
       },
     },
   ],

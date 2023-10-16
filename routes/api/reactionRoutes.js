@@ -2,7 +2,7 @@ const router = require('express').Router();
 const {
   createReaction,
   deleteReaction,
-} = require('../../controllers/reaction-controller');
+} = require('../../controllers/reactionController');
 
 // POST a reaction to a thought
 router.post('/:thoughtId/reactions', createReaction);
