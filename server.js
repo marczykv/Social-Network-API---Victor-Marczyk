@@ -10,11 +10,9 @@ app.use('/api/users', require('./routes/api/userRoutes'));
 app.use('/api/thoughts', require('./routes/api/thoughtRoutes'));
 app.use('/api/reactions', require('./routes/api/reactionRoutes'));
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/social-network', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/social-network', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  useCreateIndex: true,
-  useFindAndModify: false,
 });
 
 mongoose.connection.on('connected', () => {
